@@ -5,17 +5,20 @@ header{
 
 }
 .HOME{
-padding: 50px;
+margin-left: 200px;
+margin-right: 200px;
 }
 .HOME img{
 width: 300px;
 
 }
 .ABOUT{
-
+    margin-left: 200px;
+    margin-right: 200px;
 }
 .SERVICES{
-
+    margin-left: 200px;
+    margin-right: 200px;
 }
 .BLOG{
 
@@ -43,6 +46,7 @@ border-radius: 2%;
 .container{
 display: flex;
 justify-content: space-between;
+margin: 0;
 }
 
 i{
