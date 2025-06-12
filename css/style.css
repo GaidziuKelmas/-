@@ -1,5 +1,6 @@
 body{
 font-family: Sans-serif;
+margin: 0;
 }
 header{
 
@@ -24,11 +25,122 @@ width: 300px;
 
 }
 .REDLINE{
-
+ 
+}
+footer{
+background-color: black;
+color: whitesmoke;
+width: 100vw;
+padding: 40px 20px 20px
 }
 .CONTACT-US{
- 
-}    
+ max-width: 1200px;
+ margin: 0 auto;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ gap: 30px;
+}   
+.footer-column{
+    flex: 1;
+    min-width: 200px;
+}
+.footer-financial p i{
+    margin-right: 10px;
+}
+.footer-financial i{
+    font-size: 20px;
+}
+.footer-information{
+    padding-right: 100px;
+}
+.footer-instagram{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 10px;
+ max-width: 100px;
+}
+.footer-column h5{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.footer-column p{
+    font-size: 14px;
+    line-height: 1.6;
+}
+.placeholder-fotke{
+    width: 40px;
+    height: 40px;
+    background-color: whitesmoke;
+    display: inline;
+    margin: 5px 5px 0 0;
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 160px;
+}
+.socialinios-icon{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: 80px;
+}
+.socialinios-icon .icon i{
+    width: 30px;
+    height: 30px;
+    font-size: 5px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 0;
+}
+
+.footer-column input{
+    padding: 10px;
+    width: 100%;
+    max-width: 220px;
+    border: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.footer-column button{
+    padding: 10px 20px;
+    background-color: red;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+}
+.footer-apacia{
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid snow;
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+.placeholder-fotke {
+    position: relative;
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: whitesmoke;
+    display: inline-block;
+    margin: 5px 5px 0 0;
+    overflow: hidden;
+}
+.placeholder-fotke img{
+    position: absolute;
+    top: 10px;
+    left: 6px;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    display: block;
+}
 
 .item{
 width: 185px;
@@ -47,6 +159,7 @@ border-radius: 2%;
 display: flex;
 justify-content: space-between;
 margin: 0;
+/* max-width: 1200px; */
 }
 
 i{
@@ -58,14 +171,6 @@ i{
     background-color: red;
 }
 
-/* p{
-    border: 1px solid white;
-    width: 100px;
-    height: 25px;
-    margin-left: 40px;
-    padding-top: 5px;
-    border-radius: 25%;
-} */
 .item-5{
     width: 100%;
     height: 200px;
@@ -76,3 +181,4 @@ i{
     padding-left: 50px;
     padding-right: 50px;
 }
+
