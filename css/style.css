@@ -8,24 +8,146 @@ a{
     text-decoration: none;
     color: black;
 }
-header{
-
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
-.HOME{
+.HOME p{
+color: #1b5a8d;
+}
+.red{
+    width: 40px;
+    height: 40px;
+}
+.blue{
+  position: absolute;
+  left: 12px;
+  top: 24px;
+  width: 24px;
+  height: 24px;
+}
+.HOME nav {
+  display: flex;
+  gap: 40px; 
+  align-items: center;
+  padding: 30px 100px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.logo p{
+  color: #1b5a8d;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 0px; 
+}
+.financial{
+padding-top: 200px;
 margin-left: 200px;
 margin-right: 200px;
 }
-.HOME img{
+.idk{
+}
+.financial h1{
+    font-size: 90px;
+    width: 200px;
+}
+.financial p{
+    width: 400px;
+    margin-left: 0px;
+    margin-bottom: 50px;
+}
+.contact{
+    border-radius: 50px;
+    border: 4px solid rgb(248, 9, 9);
+    width: 130px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+}
+.readmore{
+    border-radius: 50px;
+    border: 4px solid rgb(0, 60, 255);
+    width: 130px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+}
+.financial img{
 width: 300px;
-
+}
+.read a{
+    color: azure;
 }
 .ABOUT{
+    position: relative;
     margin-left: 200px;
     margin-right: 200px;
 }
 .SERVICES{
     margin-left: 200px;
     margin-right: 200px;
+    text-align: center;
+}
+.ABOUT h4{
+    font-size: 25px;
+}
+.aboutfirst{
+    margin-left: 0px;
+    width: 640px;
+    position: relative;
+}
+.whitecircle{
+    position:absolute;
+    object-fit: cover; 
+    margin-left: -210px;
+    margin-top: -300px;
+    width: 460px;
+}
+.asianman{
+    margin-left: 650px;
+    margin-top: -600px;
+}
+.unocircle{
+    margin-left: -450px;
+    margin-bottom: 20px;
+
+}
+.doscircle{
+    margin-left: 120px;
+    margin-bottom: -20px;
+}
+.aboutread{
+margin-top: -100px;
+margin-left: 0px;
+border: 2px solid #4aafff;
+width: 150px;
+height: 40px;
+border-radius: 20px;
+color: #4aafff;
+display: flex;
+justify-content: center;  
+align-items: center;      
+text-align: center;
+}
+.SERVICES h4{
+    font-size: 25px;
+}
+.services-linija{
+    margin-top: 200px;
+}
+.SERVICES h4 p{
+margin: 0 auto;
+text-align: center;
+}
+.SERVICES p{
+    margin-bottom: 30px;
 }
 .team{
     margin: 0 auto;
@@ -50,6 +172,9 @@ width: 300px;
     text-align: center;
     max-width: 200px;
 }
+.follow a{
+    color: red;
+}
 .member p{
     margin: 5px 0;
 }
@@ -63,7 +188,7 @@ width: 300px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 4px solid blueviolet;
+    border: 4px solid navy;
     margin-bottom: 10px;
 }
 .socials a {
@@ -232,26 +357,102 @@ padding: 40px 20px 20px 0px;
 }
 
 .item{
-width: 200px;
-height: 240px;
+width: 340px;
+height: 300px;
 border: 1px solid black;
-background-color: blue;
+background-color: #1b5a8d;
 color: azure;
 border-radius: 5%;
 text-align: center;
-margin-left: 40px;
+margin-left: 0px;
 padding-top: 5px;
 border-radius: 2%;
+margin-bottom: 100px;
+}
+.item p{
+margin: 0 auto;
+margin-top: 50px;
+border: 2px solid whitesmoke;
+width: 150px;
+height: 30px;
+border-radius: 10px;
+text-align: center;
 }
 .item i{
-    margin-top: 20px;
-    font-size: 40px;
+margin-top: 20px;
+font-size: 40px;
 }
 .flex-first{
 display: flex;
 justify-content: space-between;
-margin: 0;
+margin: 0 ;
 max-width: 100%;
+}
+.projects{
+    padding-bottom: 450px;
+    padding-top: 200px;
+}
+.projects h4,p{
+    margin-left: 200px;
+}
+.linija{
+    margin-left: 200px;
+}
+.projects-yap{
+    width: 500px;
+}
+.projects h4{
+    font-size: 25px;
+}
+.ellipse{
+    width: 30px;
+    height: 30px;
+}
+.mazasis{
+ height: 60px;
+ margin-left: 25px;
+ margin-top: 200px;
+}
+.didysis{
+ height: 90px;
+ margin-left: 100px;
+}
+.projects-read{
+margin-top: 0px;
+border: 2px solid #4aafff;
+width: 150px;
+height: 40px;
+border-radius: 20px;
+display: flex;
+justify-content: center;  
+align-items: center;      
+text-align: center;
+}
+.projects a{
+color: #4aafff;
+}
+.projects-fotkes{
+
+}
+.img-1{
+    height: 300px;
+    width: 200px;
+
+}
+.img-2{
+    height: 200px;
+    width: 200px;
+
+}
+.img-3{
+    height: 200px;
+    width: 200px;
+
+}
+.img-4{
+    height: 200px;
+    width: 200px;
+
 }
 .container{
 display: flex;
@@ -266,17 +467,24 @@ max-width: 100vw;
 }
 
 .item-2{
-    background-color: red;
+    background-color: #ff5a58;
 }
 
 .item-5{
     width: 100vw;
     height: 200px;
-    background-color: red;
+    background-color: #ff5a58;
     color: white;
     text-align: center;
     padding-top: 70px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 60px;
 }
-
+.item-5 h2{
+    font-size: 30px;
+    line-height: 1.6;
+}
+.item-5 b{
+    font-size: 20px;
+}
