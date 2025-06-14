@@ -8,7 +8,7 @@ a{
     text-decoration: none;
     color: black;
 }
-header {
+header{
   position: fixed;
   top: 0;
   width: 100%;
@@ -48,11 +48,13 @@ color: #1b5a8d;
   margin-left: 0px; 
 }
 .financial{
-padding-top: 200px;
-margin-left: 200px;
-margin-right: 200px;
+   padding: 100px 200px;
 }
-.idk{
+.financial-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
 }
 .financial h1{
     font-size: 90px;
@@ -60,8 +62,41 @@ margin-right: 200px;
 }
 .financial p{
     width: 400px;
-    margin-left: 0px;
     margin-bottom: 50px;
+}
+.financial-fotkes{
+  position: relative;
+  width: 100%;
+}
+.business {
+ position: absolute;
+  top: 100px;
+  left: 250px;
+  width: 600px;
+  border-radius: 20px;
+  z-index: 2;
+}
+.idk{
+  position: absolute;
+  width: 700px; 
+  border-radius: 20px;
+  left: 200px;
+  z-index: 1;
+}
+.cirkle{
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  z-index: 3;
+}
+.cirkle1 {
+  top: 300px;
+  left: 170px;
+}
+
+.cirkle2 {
+  top: 500px;
+  left: 250px;
 }
 .contact{
     border-radius: 50px;
@@ -79,9 +114,6 @@ margin-right: 200px;
     text-align: center;
     display: inline-block;
 }
-.financial img{
-width: 300px;
-}
 .read a{
     color: azure;
 }
@@ -94,6 +126,9 @@ width: 300px;
     margin-left: 200px;
     margin-right: 200px;
     text-align: center;
+}
+.about-linija{
+margin-top:500px;
 }
 .ABOUT h4{
     font-size: 25px;
@@ -109,6 +144,7 @@ width: 300px;
     margin-left: -210px;
     margin-top: -300px;
     width: 460px;
+    pointer-events: none;
 }
 .asianman{
     margin-left: 650px;
@@ -224,7 +260,6 @@ text-align: center;
 }
 .raudonasis{
 height: 50px;
-
 }
 .senis{
 height: 90px;
@@ -237,23 +272,21 @@ height: 65px;
     margin-top: 160px;
     margin-bottom: 160px;
 }
-.REDLINE{
-
-}
 footer{
 background-color: black;
 color: whitesmoke;
 width: 100vw;
 padding: 40px 20px 20px 0px;
 }
-.CONTACT-US{
- max-width: 1200px;
- margin: 0 auto;
- display: flex;
- flex-wrap: wrap;
- justify-content: space-between;
- gap: 30px;
-}   
+.CONTACT-US {
+  max-width: 1200px;
+  margin: 0 auto; 
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
 .footer-column{
     flex: 1;
     min-width: 200px;
@@ -288,7 +321,7 @@ padding: 40px 20px 20px 0px;
     background-color: whitesmoke;
     display: inline;
     margin: 5px 5px 0 0;
-}
+} 
 .newsletter{
     display: flex;
     flex-direction: column;
@@ -312,7 +345,6 @@ padding: 40px 20px 20px 0px;
     font-size: 24px;
     padding: 0;
 }
-
 .footer-column input{
     padding: 10px;
     width: 100%;
@@ -329,33 +361,31 @@ padding: 40px 20px 20px 0px;
     cursor: pointer;
 }
 .footer-apacia{
-    text-align: center;
-    margin-top: 40px;
-    border-top: 1px solid snow;
-    padding-top: 15px;
-    font-size: 12px;
+text-align: center;
+margin-top: 40px;
+border-top: 1px solid snow;
+padding-top: 15px;
+font-size: 12px;
 }
-
 .placeholder-fotke {
-    position: relative;
-    margin-top: 10px;
-    width: 40px;
-    height: 40px;
-    background-color: whitesmoke;
-    display: inline-block;
-    margin: 5px 5px 0 0;
-    overflow: hidden;
+position: relative;
+margin-top: 10px;
+width: 40px;
+height: 40px;
+background-color: whitesmoke;
+display: inline-block;
+margin: 5px 5px 0 0;
+overflow: hidden;
 }
 .placeholder-fotke img{
-    position: absolute;
-    top: 10px;
-    left: 6px;
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
-    display: block;
+position: absolute;
+top: 10px;
+left: 6px;
+width: 20px;
+height: 20px;
+object-fit: contain;
+display: block;
 }
-
 .item{
 width: 340px;
 height: 300px;
@@ -392,7 +422,10 @@ max-width: 100%;
     padding-bottom: 450px;
     padding-top: 200px;
 }
-.projects h4,p{
+.projects h4{
+    margin-left: 200px;
+}
+.projects p{
     margin-left: 200px;
 }
 .linija{
@@ -431,28 +464,82 @@ text-align: center;
 .projects a{
 color: #4aafff;
 }
-.projects-fotkes{
-
+.projects-fotkes {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  margin-top: -300px; 
+  margin-left: 800px;  
 }
 .img-1{
     height: 300px;
     width: 200px;
+}
+.image-overlay {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
+.img-1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6); 
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #000;
+  z-index: 1; 
+}
+
+.stiklas {
+  background-color: red;
+  color: whitesmoke;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.overlay-content p {
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
 }
 .img-2{
     height: 200px;
     width: 200px;
-
+    margin-top: 50px;
 }
 .img-3{
     height: 200px;
     width: 200px;
-
 }
 .img-4{
     height: 200px;
     width: 200px;
-
+    margin-top: -50px;
 }
 .container{
 display: flex;
